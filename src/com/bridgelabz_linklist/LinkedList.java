@@ -58,6 +58,3 @@ class Node
         this.next = null;
     }
 }
-    Ability to create Linked
-    List by appending 30 and
-        70 to 56
