@@ -1,8 +1,9 @@
 package com.bridgelabz_linklist;
 import java.util.*;
-public class LinkedListMain {
+public class LinkedListMain
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] darsh) {
 
         LinkedList list = new LinkedList();
         list.append(56);
@@ -12,7 +13,7 @@ public class LinkedListMain {
         list.insertAtMiddle(30);
         list.show();
         System.out.println();
-        list.pop();
+        list.popLastelement();
         list.show();
     }
 

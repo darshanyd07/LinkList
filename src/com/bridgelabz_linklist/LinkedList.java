@@ -1,5 +1,6 @@
 package com.bridgelabz_linklist;
-public class LinkedList {
+public class LinkedList
+{
     Node head;
     Node tail;
 
@@ -54,14 +55,28 @@ public class LinkedList {
         }
     }
 
-    public void pop()
-    {
+
+    public void popFirstelement() {
         if(head == null) {
-            System.out.print("empty");
+            System.out.print("is empty");
         }
         head = head.next;
     }
+
+    public Node popLastelement() {
+        if(head == null || head.next == null) {
+            return null;
+        }
+        Node temp = head;
+        while(temp.next.next != null) {
+            temp = temp.next;
+        }
+        temp.next = null;
+
+        return head;
+    }
 }
+
 class Node{
 
     int data;
